@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dante Arceneaux</title>
+		
+		<script src="jquery.tagcanvas.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"
+			integrity="sha512-+VS2+Nl1Qit71a/lbncmVsWOZ0BmPDkopw5sXAS2W+OfeceCEd9OGTQWjgVgP5QaMV4ddqOIW9XLW7UVFzkMAw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+		<script src="http://velocityjs.org/blast/build/jquery.blast.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://julian.com/research/velocity/build/jquery.velocity.min.js"></script>
+		<script src="http://velocityjs.org/build/velocity.ui.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.min.js"></script>
+		<script src="jquery.blast.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/EaselPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/PixiPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/EasePack.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
+		></script>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="scroll.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/all.min.css" />
+		<script
+			type="text/javascript"
+			src="https://res.cloudinary.com/veseylab/raw/upload/v1597754761/magicmouse/magic_mouse-1.0.js"
+		></script>
+	</head>
+	<body>
+		<header id="home">
+			<div id="sound">
+				<audio id="myAudio">
+					<source src="./Night.mp3" />
+				</audio>
+				<i class="fab fa-soundcloud sound-cloud"></i>
+				<span>Sound</span>
+				<div class="on-off">
+					<span id="off">OFF</span>
+					<span id="on">On</span>
+				</div>
+			</div>
+			<div class="btns-container">
+				<i class="fas fa-bars bars"></i>
+				<i class="fas fa-times times"></i>
+			</div>
+		</header>
+
+		<!-- sidebar -->
+		<aside class="aside aside-scroll">
+			<div class="aside-wrapper">
+				<div class="logo-section">
+					<a class="logo" rel="home" href="#">
+						<img
+							src="images/exymium logo.png"
+							alt="logo"
+							class="exymium-logo"
+						/>
+						<span>Dante</span>
+					</a>
+					<span>Web Developer</span>
+				</div>
+
+				<nav class="nav-links">
+					<a href="#home" class="magic-hover magic-hover__square">Home</a>
+					<a href="#about" class="magic-hover magic-hover__square">About</a>
+					<a href="#section-work" class="magic-hover magic-hover__square">Work</a>
+					<a href="#blog" class="magic-hover magic-hover__square">Blog</a>
+					<a href="#contact" class="magic-hover magic-hover__square">Contact</a>
+				</nav>
+				<!-- social icons -->
+				<ul class="social-icons">
+					<li>
+						<a href="">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fab fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fas fa-rss"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<!-- text zone  section one-->
+		<section id="section-home" class="section-home">
+			<div class="text-zone">
+				<h1 id="random">
+					Hi, <br />
+					I'm <span class="accent-color">D</span>ante, <br />
+					a web developer
+				</h1>
+				<p class="gray-text">
+					Front End Developer / HTML, CSS, Javascript Expert
+				</p>
+				<br />
+
+				<!-- contact button -->
+				<a
+					href="mailto:dantearcene@gmail.com?subject=RE:%20Your%20services%20"
+					class="contact-button"
+				>
+					<div>
+						<span class="bg"></span>
+						<span class="base"></span>
+						<span class="text"> Contact me! </span>
+					</div>
+				</a>
+				<canvas id="canvas1"></canvas>
+			</div>
+
+			<!--  -->
+			<div class="scroll-down">
+				<span>scroll down</span>
+				<i class="fas fa-arrow-down"></i>
+			</div>
+
+			<div class="scroll-down scroll-down--left">
+				<span>scroll down</span>
+				<i class="fas fa-arrow-down"></i>
+			</div>
+		</section>
+
+		<div class="wrapper" id="js-wrapper">
+			<div class="sections" id="js-slideContainer">
+				<section class="section-scroll " id="about">
+					<div class="overlay"></div>
+					<div class="content-scroll">
+						<h2 class="three-sixty-one">Skills</h2>
+						<img src="images/coding.png" alt="" class="coding-img">
+						<p class="content-text-one" >
+							HTML, CSS, JavaScript, React, Node.js, Agile/Scrum
+						</p>
+						
+					</div>
+				</section>
+				<section class="section-scroll ">
+					<div class="overlay"></div>
+					<div class="content-scroll">
+						<h2 class="three-sixty-two">Creativity</h2>
+						<p class="content-text-two">
+							Animation, Scroll-effects, UX-UI Design
+						</p>
+						
+					</div>
+				</section>
+				<section class="section-scroll ">
+					<div class="overlay"></div>
+					<div class="content-scroll">
+						<h2 class="three-sixty-three">Passion</h2>
+						<h4 class="sectionTitle">Self-taught</h4>
+						<p class="content-text-three">
+							Tireless thirst to learn and improve
+						</p>
+						
+					</div>
+				</section>
+				<section class="section-scroll ">
+					<div class="overlay"></div>
+					<div class="content-scroll">
+						<h2 class="three-sixty-four">Execution</h2>
+						<h4 class="sectionTitle">“Ideas don’t make you rich. The correct execution of ideas does.” </h4>
+						<p class="content-text-four">
+						~ Felix Dennis
+						</p>
+						
+					</div>
+				</section>
+				<section class="section-scroll ">
+					<div class="overlay"></div>
+					<div class="content-scroll">
+						<h2 class="three-sixty-five">Commitment</h2>
+						<h4 class="sectionTitle">while(!(succeed = try ( )));</h4>
+						<p class="content-text-five">
+							Problem-solving is one of the greatest joys of my life and I never stop until I accomplish my task
+						</p>
+						
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- part 2 starts here  -->
+		<!-- part 2 starts here  -->
+		<!-- part 2 starts here  -->
+		<section id="section-work">
+			<div id="header">
+				<h2>My Portfolio</h2>
+			</div>
+			<div class="text-zone-2">
+				<div>
+					<p>
+						A small gallery of recent projects chosen by me. I've done them all
+						together with amazing people from companies around the globe. It's
+						only a drop in the ocean compared to the entire list.
+						<br />
+						interested to see some more? Visit <a href="#">my work</a> page
+					</p>
+				</div>
+				<!-- my portfolio button -->
+				<a href="mailto:dantearcene@gmail.com?subject=RE:%20Your%20services%20"" class="contact-button">
+					<div>
+						<span class="bg"></span>
+						<span class="base"></span>
+						<span class="text"> Contact me! </span>
+					</div>
+				</a>
+			</div>
+			<div class="fake-big-2">Work</div>
+		</section>
+
+		<!-- magical wall section -->
+		<div id="home-magicwall" class="fake-magicwall">
+			<ul>
+				<li>
+					<div class="magic-wall_item lazyload" id="modal1">
+						<img src="images/Bez-nazwy-3.jpg" alt="image" />
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 1 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img src="images/3.jpg" alt="image" />
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 3 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img src="images/Adrian-Flux-Motorsport-1.jpg" alt="image" />
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 3 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img src="images/Bez-nazwy-3.jpg" alt="image" />
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 4 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img
+							src="images/https-club-silversurfers-com-wp-content-themes-club-2B-img-logo-svg.png"
+							alt="image"
+						/>
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 5 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img src="images/london-block.jpg" alt="image" />
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 6 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img
+							src="images/Adrian-Flux-Motorsport-e1546707189414.jpg"
+							alt="image"
+						/>
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 7 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img src="images/unnamed.jpg" alt="image" />
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 8 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img src="images/ttelo.png" alt="image" />
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 9 -->
+				<li>
+					<div class="magic-wall_item lazyload">
+						<img src="images/2-scaled.jpg" alt="image" />
+						<div class="hover-content"></div>
+						<a href="#" class="colorbox"></a>
+					</div>
+				</li>
+				<!-- magic wall 10 -->
+			</ul>
+		</div>
+		<!-- this is the third part the about me section -->
+		<section id="section-about">
+			<div class="text-zone3">
+				<div id="header">
+					<h2>Who Am I?</h2>
+				</div>
+
+				<p>
+					Since Adobe Flash was a complete innovation, alongside with CSS 1.0
+					and HTML 4.01 as standards of the current web I've been passionate
+					about web.
+				</p>
+				<p>
+					For over a decade I had many opportunities to work in a vast spectrum
+					of
+					<a href="#" class="tech">web technologies</a>
+					what let me gather a significant amount of various experience. Working
+					for companies and individuals around the globe I met and learnt from
+					amazing and ambitious people.
+				</p>
+				<p>
+					I currently work remotely with a selected freelance client base being
+					open for new opportunities.
+				</p>
+			</div>
+
+			<div class="skills-charts">
+				<div id="myCanvasContainer">
+					<canvas width="500" height="500" id="myCanvas">
+						<ul id="tags">
+							<li><a href="#" target="_blank">HTML</a></li>
+							<li><a href="#" target="_blank">CSS</a></li>
+							<li><a href="#" target="_blank">ES5</a></li>
+							<li><a href="#" target="_blank">TypeScript</a></li>
+							<li><a href="#" target="_blank">REST</a></li>
+							<li><a href="#" target="_blank">JSON</a></li>
+							<li><a href="#" target="_blank">GSAP</a></li>
+							<li><a href="#" target="_blank">Data Science</a></li>
+							<li><a href="#" target="_blank">Wordpress</a></li>
+							<li><a href="#" target="_blank">PHP</a></li>
+							<li><a href="#" target="_blank">Python</a></li>
+							<li><a href="#" target="_blank">Node JS</a></li>
+							<li><a href="#" target="_blank">Git</a></li>
+							<li><a href="#" target="_blank">_lodash</a></li>
+							<li><a href="#" target="_blank">SASS</a></li>
+							<li><a href="#" target="_blank">JQuery</a></li>
+							<li><a href="#" target="_blank">SQI</a></li>
+							<li><a href="#" target="_blank">Gulp</a></li>
+							<li><a href="#" target="_blank">npm</a></li>
+							<li><a href="#" target="_blank">BEM</a></li>
+						</ul>
+					</canvas>
+				</div>
+			</div>
+		</section>
+
+		<!-- the about section ends here -->
+
+		<!-- blog section starts here -->
+		<!-- BLOG SECTION -->
+
+		<section
+			data-load="blog"
+			id="section-blog"
+			class="section-full section-blog js-way"
+		>
+			<div class="fake-big-2">Blog</div>
+
+			<!-- blog articles wrapper -->
+			<div class="blog-articles">
+				<!-- Blog articles card 1-->
+				<article class="post-articles" style="border-top: 2px solid#81D8F7">
+					<div class="post-content">
+						<time class="post-date" style="color: #81d8f7">
+							Computer Science</time
+						>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="2354" href="#">
+									Algorithms and Data Structures (Part 1)
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							For the last 20 years, Google has been the main search...
+						</div>
+					</div>
+				</article>
+
+				<!-- Blog articles card 2-->
+				<article class="post-articles" style="border-top: 2px solid #f50057">
+					<div class="post-content">
+						<time class="post-date" style="color: #f50057">
+							Web Development</time
+						>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="2182" href="#">
+									React JS Questions &#038; Answers (Part 1) 2021
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							What is JSX? JSX is a superset of JavaScript that allows...
+						</div>
+					</div>
+				</article>
+
+				<!-- Blog articles card 3-->
+				<article class="post-articles" style="border-top: 2px solid orange">
+					<div class="post-content">
+						<time class="post-date" style="color: orange">JavaScript</time>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="2113" href="#">
+									Javascript Interview Questions &#038; Answers (Part 1)
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							What are the possible ways to create objects in JavaScript?
+							There...
+						</div>
+					</div>
+				</article>
+
+				<!-- Blog articles card 4-->
+				<article class="post-articles" style="border-top: 2px solid orange">
+					<div class="post-content">
+						<time class="post-date" style="color: orange"> JavaScript</time>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="2037" href="#">
+									How to Sort Arrays in JavaScript?
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							In this article, we‟ll discuss how you can sort arrays in...
+						</div>
+					</div>
+				</article>
+
+				<!-- Blog articles card 5-->
+				<article class="post-articles" style="border-top: 2px solid #08fdd8">
+					<div class="post-content">
+						<time class="post-date" style="color: #08fdd8">
+							HTML &amp; CSS</time
+						>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="1900" href="#">
+									Ultimate Guide to CSS Grid Layout (Part 1)
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							Grid Container Grid Columns Grid Rows Grid Gaps &nbsp; CSS Grid...
+						</div>
+					</div>
+				</article>
+
+				<!-- Blog articles card 6 -->
+				<article class="post-articles" style="border-top: 2px solid #81d8f7">
+					<div class="post-content">
+						<time class="post-date" style="color: #81d8f7"
+							>Computer Science</time
+						>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="2312" href="#">
+									Information Representation (Part 1)
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							Number Representation: Formats Human beings have ten fingers. It
+							is a...
+						</div>
+					</div>
+				</article>
+
+				<!-- Blog articles card 7 -->
+				<article class="post-articles" style="border-top: 2px solid #08fdd8">
+					<div class="post-content">
+						<time class="post-date" style="color: #08fdd8">
+							HTML &amp; CSS</time
+						>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="2019" href="#">
+									How to use System Fonts in CSS to improve your site?
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							How to use System Fonts in CSS to improve your site...
+						</div>
+					</div>
+				</article>
+
+				<!-- Blog articles card 8 -->
+				<article class="post-articles" style="border-top: 2px solid #08fdd8">
+					<div class="post-content">
+						<time class="post-date" style="color: #08fdd8">
+							HTML &amp; CSS</time
+						>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="2000" href="#">
+									What is PostCSS and what does it do?
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							PostCSS is a very popular tool that allows developers to write...
+						</div>
+					</div>
+				</article>
+
+				<!-- Blog articles card 9-->
+				<article class="post-articles" style="border-top: 2px solid #81d8f7">
+					<div class="post-content">
+						<time class="post-date" style="color: #81d8f7">
+							Computer Science</time
+						>
+						<div class="blog-post-title">
+							<h5>
+								<a data-id="2301" href="#">
+									Basic Concepts of Data Processing (Part 2)
+								</a>
+							</h5>
+						</div>
+						<div class="blog-post-content">
+							Languages, Syntax, and Semantics Now that we understand that
+							machines work...
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<script
+			type="text/javascript"
+			src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
+		></script>
+
+		<script type="text/javascript">
+			// options = {
+			// 	cursorOuter: "circle-basic",
+			// 	hoverEffect: "circle-move",
+			// 	hoverItemMove: false,
+			// 	defaultCursor: false,
+			// 	outerWidth: 41,
+			// 	outerHeight: 41,
+			// };
+			// magicMouse(options);
+		</script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+			integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+			integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+			integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+			integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="index.js">
+		
+		</script>
+	</body>
+</html>

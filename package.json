@@ -1,0 +1,16 @@
+{
+  "name": "jacek-portfolio-from-part-1-to-3-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "blast-text": "^2.0.0",
+    "jquery": "^3.6.0"
+  }
+}
