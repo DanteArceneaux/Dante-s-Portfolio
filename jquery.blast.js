@@ -202,7 +202,7 @@
                 }
             /* Traverse the DOM tree until we find text nodes. Skip script and style elements. Skip select and textarea elements since they contain special text nodes that users would not want wrapped. 
                Additionally, check for the existence of our plugin's class to ensure that we do not retraverse elements that have already been blasted. */
-            /* Note: This basic DOM traversal technique is copyright Johann Burkard <http://johannburkard.de>. Licensed under the MIT License: http://en.wikipedia.org/wiki/MIT_License */
+            /* Note: This basic DOM traversal technique is copyright Johann Burkard <https://johannburkard.de>. Licensed under the MIT License: https://en.wikipedia.org/wiki/MIT_License */
             } else if (node.nodeType === 1 && node.hasChildNodes() && !Reg.skippedElements.test(node.tagName) && !Reg.hasPluginClass.test(node.className)) {  
                 /* Note: We don't cache childNodes' length since it's a live nodeList (which changes dynamically with the use of splitText() above). */
                 for (var i = 0; i < node.childNodes.length; i++) {
