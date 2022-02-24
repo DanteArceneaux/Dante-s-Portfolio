@@ -172,7 +172,7 @@ t3.to(".aside, #sound, .btns-container", { opacity: 1 });
 new ScrollMagic.Scene({
 	triggerElement: "#js-wrapper",
 	triggerHook: "onLeave",
-	duration: "500%",
+	duration: "300%",
 })
 	.setPin("#js-wrapper")
 	.setTween(t1)

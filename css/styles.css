@@ -21,7 +21,7 @@ body {
 	margin: 0;
 	font-family: serif;
 	color: rgb(255, 255, 255);
-	background: #0c0f0a;
+	background: #1d1d1d;
 	overflow-x: hidden;
 }
 header {
@@ -78,7 +78,7 @@ header {
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	background-color: #888787;
+	background-color:#272727;
 	z-index: 1;
 }
 .show-nav {
@@ -130,13 +130,14 @@ header {
 	text-align: center;
 	line-height: 3rem;
 	text-decoration: none;
-	color: #000000;
+	color: #c5c5c5;
 	z-index: 999;
 	font-weight: 900;
 }
 .nav-links a:hover {
-	color: #41ead4;
+	color: #ea4141;
 	z-index: 999;
+	
 }
 .nav-links a::before {
 	content: "";
@@ -161,10 +162,11 @@ header {
 }
 .social-icons li a {
 	text-decoration: none;
-	color: #1c1c1d;
+	color: #41ead4;
 }
 .social-icons li a:hover {
-	color: #41ead4;
+	color: #f10000;
+	
 }
 
 /* nav bar ends here */
@@ -459,6 +461,7 @@ header {
 	}
 
 	.aside {
+		min-width: 140px;
 		max-width: 200px;
 		width: 7.5%;
 		height: 100%;
