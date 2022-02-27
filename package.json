@@ -12,6 +12,7 @@
     "animejs": "^3.2.1",
     "blast-text": "^2.0.0",
     "jquery": "^3.6.0",
-    "linkchecker": "^1.1.0"
+    "linkchecker": "^1.1.0",
+    "ol": "^6.12.0"
   }
 }

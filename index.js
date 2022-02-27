@@ -14,6 +14,7 @@
 // 		event.target.style.fill = randomColor();
 //   });
 
+
 // canvas1
 
 const canvas = document.getElementById("canvas1");
