@@ -1009,6 +1009,7 @@ footer {
 	margin: 0% 15%;
 	width: 100vw;
 	height: fit-content;
+	padding-right: 20%;
 }
 
 .right {
@@ -1022,7 +1023,7 @@ footer {
 	display: flex;
 	color: #08fdd8;
 	margin-right: 5%;
-	margin-top: 2%;
+	margin-top: 0%;
 }
 
 .form {
