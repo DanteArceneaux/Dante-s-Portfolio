@@ -1085,9 +1085,7 @@ input[type="email"] {
 	color: #08fdd8;
 	transition: 0.3s;
 }
-.left-text {
-	padding: 50px;
-}
+
 .left-text:hover {
 	color: #03ecc5;
 }
@@ -1120,4 +1118,14 @@ input[type="email"] {
 		flex-direction: column;
 		margin: 10px 100px;
 	}
+}
+
+.left-text {
+	padding: 50px;
+	
+}
+
+.left-text h2{
+	padding: 10px;
+	
 }
