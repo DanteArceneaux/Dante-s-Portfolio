@@ -225,6 +225,8 @@ const myFunc = (navCondition) => {
 
 links.addEventListener("click", () => {
 	SideNav.classList.remove("show-nav");
+	btnTimes.style.display = "none";
+	btnBars.style.display = "block";
 });
 
 // Animate letters in hero
