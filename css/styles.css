@@ -877,8 +877,6 @@ a[href^="tel"] {
 	text-shadow: 2px 2px #08fdd8;
 }
 
-
-
 footer {
 	margin-left: 1vw;
 }
@@ -1114,8 +1112,7 @@ input[type="email"] {
 @media (min-width: 725px) {
 }
 
-
-@media (min-width: 500px) {
+@media (max-width: 500px) {
 	html,
 	body {
 		width: 100%;
