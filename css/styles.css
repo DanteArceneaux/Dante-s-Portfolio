@@ -1286,6 +1286,10 @@ input[type="email"] {
 	.form-card { 
 		display: none;
 	}
+
+	canvas	{
+		display: none;
+	}
 }
 
 .nav-links a {
