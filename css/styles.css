@@ -1141,4 +1141,8 @@ input[type="email"] {
 		width: 90vw;
 		font-size: 3vw;
 }
+
+.alpha {
+	font-size: 22px;
+}
 }
