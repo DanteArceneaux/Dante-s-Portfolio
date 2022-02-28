@@ -600,9 +600,7 @@ a[href^="tel"] {
 	.text-zone3 p {
 		width: 400px;
 	}
-	.skills-charts {
-		margin-right: 20%;
-	}
+
 
 	/* media query for blog section */
 	.section-blog {
@@ -999,7 +997,7 @@ footer {
 .left {
 	display: flex;
 	color: #08fdd8;
-	margin-right: 5%;
+	
 	margin-top: 0%;
 }
 
