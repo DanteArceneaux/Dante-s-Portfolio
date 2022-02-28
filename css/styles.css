@@ -13,11 +13,10 @@
 	--secondary: #ead7d7;
 	--accent: #ead7d7;
 	--feature: #ead7d7;
-	
 }
 body {
 	height: 100%;
-	
+
 	padding: 0;
 	margin: 0;
 	font-family: serif;
@@ -878,24 +877,7 @@ a[href^="tel"] {
 	text-shadow: 2px 2px #08fdd8;
 }
 
-@media (min-width: 500px) {
-	.aside {
-		font-size: clamp(2rem, 6vh, 12vh);
-	}
-	.logo-section span {
-		font-size: 10vw;
-	}
-	.logo-section p {
-		margin-bottom: 20px;
-	}
-	a:visited {
-		color: inherit;
-	}
 
-	.aside-wrapper {
-		padding: 10% 0%;
-	}
-}
 
 footer {
 	margin-left: 1vw;
@@ -1123,15 +1105,41 @@ input[type="email"] {
 
 .left-text {
 	padding: 50px;
-	
 }
 
-.left-text h2{
+.left-text h2 {
 	padding: 10px;
-	
+}
+
+@media (min-width: 725px) {
 }
 
 
-@media (min-width: 725px) { 
+@media (min-width: 500px) {
+	html,
+	body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.aside {
+		font-size: clamp(2rem, 6vh, 12vh);
+	}
+	.logo-section span {
+		font-size: 10vw;
+	}
+	.logo-section p {
+		margin-bottom: 20px;
+	}
+	a:visited {
+		color: inherit;
+	}
 
+	.aside-wrapper {
+		padding: 10% 0%;
+	}
 }
