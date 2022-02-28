@@ -100,7 +100,7 @@ a[href^="tel"] {
 	left: 0;
 	overflow: hidden;
 	background-color: #272727;
-	z-index: 999;
+	z-index: 1;
 }
 .show-nav {
 	height: 100%;
@@ -325,6 +325,7 @@ a[href^="tel"] {
 	font-size: 2rem;
 	color: #41ead4;
 	margin-bottom: 30px;
+	
 }
 .text-zone-2 p {
 	line-height: 1.5;
@@ -809,9 +810,7 @@ a[href^="tel"] {
 	}
 	#canvas1 {
 		z-index: 0;
-		
 	}
-
 }
 
 .three-sixty-one {
@@ -974,7 +973,6 @@ footer {
 		color: #666565;
 		letter-spacing: 3px;
 	}
-	
 }
 
 .form-container {
@@ -1115,7 +1113,7 @@ input[type="email"] {
 	}
 	.aside {
 		font-size: clamp(2rem, 6vh, 12vh);
-		z-index: 999;
+		z-index: 1;
 	}
 	.logo-section span {
 		font-size: 10vw;
@@ -1281,11 +1279,11 @@ input[type="email"] {
 	.logo p {
 		font-size: 22px;
 	}
-	.form-card { 
+	.form-card {
 		display: none;
 	}
 
-	canvas	{
+	canvas {
 		display: none;
 	}
 }
@@ -1297,4 +1295,3 @@ input[type="email"] {
 a:visited {
 	color: inherit;
 }
-
