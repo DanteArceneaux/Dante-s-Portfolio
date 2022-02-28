@@ -100,7 +100,7 @@ a[href^="tel"] {
 	left: 0;
 	overflow: hidden;
 	background-color: #272727;
-	z-index: 1;
+	z-index: 999;
 }
 .show-nav {
 	height: 100%;
@@ -689,7 +689,7 @@ a[href^="tel"] {
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 0;
+	z-index: -1;
 }
 
 .wrapper {
@@ -805,16 +805,13 @@ a[href^="tel"] {
 @media (min-width: 768px) {
 	.content {
 		width: 100%;
-		
+		z-index: -1;
 	}
 	#canvas1 {
-		z-index: -1;
+		z-index: 0;
 		
 	}
 
-	.text-zone { 
-		z-index: 999;
-	}
 }
 
 .three-sixty-one {
@@ -1118,6 +1115,7 @@ input[type="email"] {
 	}
 	.aside {
 		font-size: clamp(2rem, 6vh, 12vh);
+		z-index: 999;
 	}
 	.logo-section span {
 		font-size: 10vw;

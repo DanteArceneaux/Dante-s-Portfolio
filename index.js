@@ -206,9 +206,14 @@ const soundTrack = (soundState) => {
 const btnBars = document.querySelector(".bars");
 const btnTimes = document.querySelector(".times");
 const SideNav = document.querySelector(".aside");
+const links = document.querySelector(".nav-links");
 
 btnBars.addEventListener("click", () => myFunc("open"));
 btnTimes.addEventListener("click", () => myFunc("close"));
+
+links.addEventListener("click", () => {
+	console.log("hello");
+});
 
 const myFunc = (navCondition) => {
 	if (navCondition === "open") {
