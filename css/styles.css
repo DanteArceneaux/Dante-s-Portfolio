@@ -1133,5 +1133,12 @@ input[type="email"] {
 		padding: 10% 0%;
 	}
 
-	
+	.fake-big-2 {
+		display: none;
+	}
+
+	.form-card {
+		width: 90vw;
+		font-size: 3vw;
+}
 }
