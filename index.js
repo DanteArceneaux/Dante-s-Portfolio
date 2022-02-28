@@ -148,7 +148,7 @@ gsap.registerPlugin(ScrollTrigger);
 let t2 = gsap.timeline({
 	scrollTrigger: {
 		trigger: content[1],
-		start: "top 100%",
+		start: "top 90%",
 		scrub: 1,
 	},
 });
