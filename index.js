@@ -14,7 +14,6 @@
 // 		event.target.style.fill = randomColor();
 //   });
 
-
 // canvas1
 
 const canvas = document.getElementById("canvas1");
@@ -149,7 +148,7 @@ gsap.registerPlugin(ScrollTrigger);
 let t2 = gsap.timeline({
 	scrollTrigger: {
 		trigger: content[1],
-		start: "top 90%",
+		start: "top 100%",
 		scrub: 1,
 	},
 });
@@ -158,7 +157,7 @@ t2.to(".aside, #sound, .btns-container", { opacity: 0 });
 
 let t3 = gsap.timeline({
 	scrollTrigger: {
-		trigger: "#section-work",
+		trigger: "#section-blog",
 		start: "top",
 		scrub: 1,
 	},
