@@ -206,6 +206,7 @@ const soundTrack = (soundState) => {
 const btnBars = document.querySelector(".bars");
 const btnTimes = document.querySelector(".times");
 const SideNav = document.querySelector(".aside");
+const links = document.querySelector(".nav-links");
 
 btnBars.addEventListener("click", () => myFunc("open"));
 btnTimes.addEventListener("click", () => myFunc("close"));
@@ -221,6 +222,10 @@ const myFunc = (navCondition) => {
 		btnBars.style.display = "block";
 	}
 };
+
+links.addEventListener("click", () => {
+	SideNav.classList.remove("show-nav");
+});
 
 // Animate letters in hero
 $("h1").blast({
