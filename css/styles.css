@@ -802,12 +802,18 @@ a[href^="tel"] {
 	font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 	.content {
 		width: 100%;
+		z-index: 2;
 	}
 	#canvas1 {
 		z-index: -1;
+		
+	}
+
+	.text-zone { 
+		z-index: 999;
 	}
 }
 
@@ -971,6 +977,7 @@ footer {
 		color: #666565;
 		letter-spacing: 3px;
 	}
+	
 }
 
 .form-container {
