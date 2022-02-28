@@ -406,6 +406,7 @@ a[href^="tel"] {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	overflow: hidden;
 }
 .text-zone p {
 	margin-bottom: 15px;
